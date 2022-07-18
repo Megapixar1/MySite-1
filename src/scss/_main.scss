@@ -1,0 +1,168 @@
+//Main
+
+//Section__dog
+.dog {
+    text-align: center;
+    &__bones1 {
+        background-image: url(../img/bones1.png);
+        height: 59px;
+        width: 59px;
+        position: absolute;
+        top: 185px;
+        left: 70px;
+        @media (max-width: $breakpoint992) {
+            display: none;
+        }
+    }
+    &__doge1 {
+        background-image: url(../img/dog1.png);
+        height: 60px;
+        width: 60px;
+        position: absolute;
+        top: 350px;
+        left: 140px;
+        @media (max-width: $breakpoint992) {
+            display: none;
+        }
+    }
+    &__bones2 {
+        background-image: url(../img/dog2.png);
+        height: 60px;
+        width: 60px;
+        position: absolute;
+        top: 106px;
+        right: 214px;
+        @media (max-width: $breakpoint992) {
+            display: none;
+        }
+    }
+    &__doge2 {
+        background-image: url(../img/bones2.png);
+        height: 59px;
+        width: 59px;
+        position: absolute;
+        top: 350px;
+        right: 286px;
+        @media (max-width: $breakpoint992) {
+            display: none;
+        }
+    }
+}
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.section__dog {
+    background-image: url(../img/doge.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 540px;
+
+    @media (max-width: $breakpoint768) {
+        background-position: center;
+    }
+}
+
+.dog__title {
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 50px;
+    text-align: center;
+    padding-top: 230px;
+    
+    @media (max-width: $breakpoint768) {
+        font-size: 44px;
+        padding-top: 191px;
+    }
+}
+
+.dog__btn {
+    background-color: #0099FA;
+    color: #FFFFFF;
+    width: 345px;
+    height: 48px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    border: 1px solid #0099FA;
+    border-radius: 12px;
+    margin-top: 140px;
+    transition: .3s all;
+ 
+    &:hover {
+        background-color: darken($btnColor, 5%);
+    }
+
+    @media (max-width: $breakpoint768) {
+        margin-top: 85px;
+    }
+}
+
+//Article__dogs
+.article {
+    &__dogs-title  {
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 36px;
+        margin-top: 101px;
+        margin-bottom: 50px;
+
+        @media (max-width: $breakpoint768) {
+            margin-top: 48px;
+            margin-bottom: 26px;
+        }
+    }
+}
+.article__dogs-cards {
+    display: flex;
+    margin-bottom: 96px;
+    scroll-snap-type: x mandatory;
+
+    @media (max-width: $breakpoint992) {
+        overflow: auto;
+    }
+}
+
+.article__dogs-card {
+    scroll-snap-align: center;
+    margin-right: 20px;
+    max-width: 400px;
+    min-width: 295px;
+    @media (max-width: $breakpoint480) {
+        min-height: 399px;
+    }
+}
+.article__dogs-card:last-child{
+    margin-right: 0px;
+} 
+.dogs-card__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 29px;
+}
+ 
+.dogs-card__title {
+    color: #090A0B;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 10px;
+
+    @media (max-width: $breakpoint768) {
+        font-size: 20px;
+    }
+}
+
+.dogs-card__subtitle  {
+    color: #A9AEB4;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
